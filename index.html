@@ -3,72 +3,121 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Travel Guide</title>
-    <link rel="stylesheet" type="text/css" href="style/style.css"> 
+    <title>Planit</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li><img id='logo'src="images/logo-09.svg" alt=""></li>
-            <li><img src="images/locatieicon.svg" alt=""><a href="#">Vakantie</a></li>
-            <li><img src="images/harticon.svg" alt=""><a href="#">Matches</a> </li>
-            <li><img src="images/agendaicon.svg" alt=""><a href="#">Agenda</a></li>
-            <li><img src="images/fotoicon.svg" alt=""><a href="#">Fotodagboek</a></li>
-    
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav>
+              <ul>
+                <li><img id='logo' src="images/logo-09.svg" alt=""></li>
+                <li><img src="images/locatieicon.svg" alt=""><a href="index.html">Vakanties</a></li>
+                <li><img src="images/harticon.svg" alt=""><a href="match.html">Matches</a> </li>
+                <li><img src="images/agendaicon.svg" alt=""><a href="#">Agenda</a></li>
+                <li><img src="images/fotoicon.svg" alt=""><a href="#">Fotodagboek</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-<main>
-<sibebar>
-    <h1>Filter je zoekresultaten</h1>
+    <main>
 
-                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Waar wilt u heen...">
+        <div id="banner">
 
-                <ul id="myUL">
-                      <li><a href="#">Afrika</a></li>
-                      <li><a href="#">America</a></li>
-  </ul>
-  
- <input type="range" name="points" min="0" max="900">               
-            </sibebar>
-       
-  <!--https://www.w3schools.com/howto/howto_js_filter_lists.asp-->
-      
-               <section>
-    
-                     
-       <article>
-               <img class='harticonopen'src="images/hart-open.png" alt="">
+        </div>
+        <sibebar>
+            <h1>Filter je zoekresultaten</h1>
+            <form id="containerfilter" action="formulier">
+                <div class="childfilter">
+                    <h4>Bestemming</h4>
+                    <input type="text" placeholder="Waar wilt u heen..."> <br>
+                </div>
+                <div class="childfilter">
+                    <h4>Aankomst</h4>
+                    <input type="date"> <br>
+                </div>
+                <div class="childfilter">
+                    <h4>Vertek</h4>
+                    <input type="date"> <br>
+                </div>
+                <div class="childfilter">
+                    <h4>Budget</h4>
+                    <input type="range" name="points" min="0" max="900"> <br>
+                </div>
+                <div class="childfilter">
+                    <h4></h4>
+                    <input type="submit" value="Filter toepassen">
+                </div>
 
-        <img src="images/griekenland.jpg" alt="">
-        <h3>Hotel Vesias</h3>
-        <p>Het altijd mooie Griekenland met haar prachtige blauwe kleuren.</p>
-        <a href="#">Bekijk meer info</a>
-    </article>
-    <article>
-        <img src="images/turkije.jpg" alt="">
-        <h3>Turkije</h3>
-        <p>Het altijd mooie Turkije met haar prachtige blauwe kleuren.</p>
-        <a href="#">Bekijk meer info</a>
-    </article>
-     <article>
-        <img src="images/griekenland.jpg" alt="">
-        <h3>Griekenland</h3>
-        <p>Het altijd mooie Griekenland met haar prachtige blauwe kleuren.</p>
-        <a href="#">Bekijk meer info</a>
-    </article>
-</section>
+            </form>
 
-</main>
 
-<footer>
+        </sibebar>
 
-</footer>
+        <!--https://www.w3schools.com/howto/howto_js_filter_lists.asp-->
+
+        <section>
+
+
+            <article>
+
+                <img src="images/griekenland.jpg" alt="">
+                <h3>Hotel Vesias</h3>
+                <sub>Spanje | Tenerife, Playa De Las Americas</sub>
+                <p></p>
+                <h4>Faciliteiten</h4>
+                <ul class="faciliteiten">
+                    <li class="faciliteiten">200m tot strand</li>
+                    <li class="faciliteiten">Buiten zwembad</li>
+                    <li class="faciliteiten">Wellness &amp;Sauna</li>
+                </ul>
+                <a href="#">Bekijk meer info</a>
+                <img src="images/hart-leeg.svg" alt="" class="hartlike">
+
+            </article>
+            <article>
+                <img src="images/turkije.jpg" alt="">
+                <h3>Turkije</h3>
+                <table>
+                    <tr>
+                        <th>Faciliteiten</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Zwembad</td>
+                        <td>Sportzaal</td>
+                        <td>Entertainment</td>
+                    </tr>
+                    <tr>
+                        <td>Sauna</td>
+                        <td>Wellness</td>
+                        <td>Bad</td>
+                    </tr>
+                </table>
+                <img src="images/hart-leeg.svg" alt="" class="hartlike">
+
+            </article>
+            <article>
+
+                <img src="images/griekenland.jpg" alt="">
+                <h3>Griekenland</h3>
+                <p>Het altijd mooie Griekenland met haar prachtige blauwe kleuren.</p>
+                <a href="#">Bekijk meer info</a>
+                <img src="images/hart-leeg.svg" alt="" class="hartlike">
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+
+
+
+    </footer>
 
 
 </body>
@@ -76,4 +125,4 @@
 </html>
 
 
- <script src="js/javascript.js"></script> 
+<script src="js/javascript.js"></script>

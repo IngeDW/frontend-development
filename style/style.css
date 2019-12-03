@@ -12,17 +12,34 @@ h1 {
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: 400;
     padding: 0em 0.6em;
 }
 
 h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: 400;
+    font-size: 180%;
+    margin: 10px 0 0 0;
+    padding: 0;
 }
 
-p {
+h4 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+
+sub {
+    color: rgb(102, 36, 131);
+    padding: 0;
+    margin: -10px 0 0 0;
+}
+
+p,
+li {
     color: #666;
     padding: 0 1em;
     line-height: 1.4;
@@ -32,17 +49,45 @@ p {
 a {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    color: #D60B52;
 }
 
 a:hover {
     font-weight: 400;
 }
 
+input {
+    width: 20em;
+    padding: 0.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
 
+}
+
+input[type=submit] {
+  background: linear-gradient(38deg, rgba(102, 36, 131, 1) 0%, rgba(214, 11, 82, 1) 100%);
+color: white;
+border: none;
+border-radius: 25px;
+}
 
 /*****************************
            HEADER
 ******************************/
+
+#banner {
+    background-image: url(../images/banner2.jpg);
+    background-position: center bottom;
+    background-size: 100vw;
+    height: 40vw;
+    width: 100vw;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 #logo {
     width: 100px;
@@ -54,7 +99,8 @@ header {
     padding: 1em 1.5em;
     position: fixed;
     top: 0;
-    width: 100vw;
+    min-width: 100vw;
+    z-index: 10;
 }
 
 li {
@@ -92,7 +138,7 @@ nav ul {
 
 
 ul li {
-    margin-left: 3em;
+    margin-left: 2em;
 }
 
 nav li:hover {
@@ -140,60 +186,6 @@ nav li:first-child {
 
 
 /*****************************
-           FORM
-******************************/
-
-#myInput {
-    background-image: url('/css/searchicon.png');
-    /* Add a search icon to input */
-    background-position: 10px 12px;
-    /* Position the search icon */
-    background-repeat: no-repeat;
-    /* Do not repeat the icon image */
-    width: 100%;
-    /* Full-width */
-    font-size: 16px;
-    /* Increase font-size */
-    padding: 12px 20px 12px 40px;
-    /* Add some padding */
-    border: 1px solid #ddd;
-    /* Add a grey border */
-    margin-bottom: 12px;
-    /* Add some space below the input */
-}
-
-#myUL {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#myUL li a {
-    border: 1px solid #ddd;
-    /* Add a border to all links */
-    margin-top: -1px;
-    /* Prevent double borders */
-    background-color: #f6f6f6;
-    /* Grey background color */
-    padding: 12px;
-    /* Add some padding */
-    text-decoration: none;
-    /* Remove default text underline */
-    font-size: 18px;
-    /* Increase the font-size */
-    color: black;
-    /* Add a black text color */
-    display: block;
-    /* Make it into a block element to fill the whole list */
-}
-
-#myUL li a:hover:not(.header) {
-    background-color: #eee;
-    /* Add a hover effect to all links, except for headers */
-}
-
-/*****************************
            BODY
 ******************************/
 
@@ -203,6 +195,8 @@ sidebar {
     position: absolute;
     max-width: 200px;
     height: 100%;
+    background-color: white;
+    border: 1px solid black;
 }
 
 body {
@@ -210,6 +204,18 @@ body {
     margin: 4em 0 0 0;
     background-color: #f1f1f1;
 }
+
+form {
+    padding: 1em;
+    display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );}
+
+.childfilter {
+  grid-gap: 1em;
+
+}
+
+
 
 section {
     padding: 1em;
@@ -230,14 +236,16 @@ p {
 
 article {
     background-color: white;
-    padding: 1em;
+    padding: 0em;
     margin: 1em;
     text-align: left;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
 
+    -webkit-mask-image: radial-gradient(circle 10px at 0 0, transparent 0, transparent 20px, black 21px);
+
+}
 
 article:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -246,22 +254,39 @@ article:hover {
 /*Bron: https://codepen.io/sdthornton/pen/wBZdXq?editors=1100*/
 
 article img {
-    width: 40%;
+    width: 100%;
     float: left;
-    margin: 1em;
+    margin: 0em;
 }
 
 
 
-.harticonopen {
-    width: 30px;
-    position:;
+.hartlike {
+    width: 3.5em;
+    position: ;
     top: 5px;
     right: 10px;
 }
 
+h3,
+h4 ul li {
+    color: black;
+    margin: 1em;
+}
+
+.faciliteiten {
+    color: black;
+    list-style: none;
+}
 
 
+
+@media (min-width: 620px) {
+    article img {
+        width: 50%;
+        margin-right: 2em;
+    }
+}
 
 /*****************************
            FOOTER
