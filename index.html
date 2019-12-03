@@ -3,105 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Travel Guide</title>
     <link rel="stylesheet" type="text/css" href="style/style.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:400,400i,600,600i,700,700i,800,800i|Roboto+Mono:400,400i,500,500i,700,700i&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 
 <header>
     <nav>
-        <a href="#"><img src="images/logo.svg" alt=""></a>
-
         <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Over mij</a></li>
-            <li><a href="#">Experimenten</a></li>
+            <li><img id='logo'src="images/logo-09.svg" alt=""></li>
+            <li><img src="images/locatieicon.svg" alt=""><a href="#">Vakantie</a></li>
+            <li><img src="images/harticon.svg" alt=""><a href="#">Matches</a> </li>
+            <li><img src="images/agendaicon.svg" alt=""><a href="#">Agenda</a></li>
+            <li><img src="images/fotoicon.svg" alt=""><a href="#">Fotodagboek</a></li>
+    
         </ul>
     </nav>
 </header>
 
 
 <main>
-<h1>&#60;To beautify the web&#47;&#62;</h1>
+<sibebar>
+    <h1>Filter je zoekresultaten</h1>
 
-<section>
-    <h2>Mijn werk</h2>
-    <p>Tekst</p>
+                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Waar wilt u heen...">
+
+                <ul id="myUL">
+                      <li><a href="#">Afrika</a></li>
+                      <li><a href="#">America</a></li>
+  </ul>
+  
+ <input type="range" name="points" min="0" max="900">               
+            </sibebar>
+       
+  <!--https://www.w3schools.com/howto/howto_js_filter_lists.asp-->
+      
+               <section>
     
-    <article>
-        <img src="images/projecten/cooldown.png" alt="">
-        <h3>Cooldown</h3>
-        <p>Cooldown helpt sporters hun spieren te masseren na een workout. In de app zien sporters welke spieren zij het meest belast hebben. Hier wordt de cooldown op gebaseerd. Spieren zullen beter herstellen en prestaties zullen omhoog gaan.</p>
-        <a href="#">Bekijk dit project</a>
+                     
+       <article>
+               <img class='harticonopen'src="images/hart-open.png" alt="">
+
+        <img src="images/griekenland.jpg" alt="">
+        <h3>Hotel Vesias</h3>
+        <p>Het altijd mooie Griekenland met haar prachtige blauwe kleuren.</p>
+        <a href="#">Bekijk meer info</a>
     </article>
     <article>
-        <img src="images/projecten/sprint-scherm.png" alt="">
-        <h3>Sprint Wearable</h3>
-        <p>De wearable voor de perfecte powernap. Gecombineerd met de Sprint App kunnen topsporters hun prestaties verbeteren door het advies van Sprint om een powernap te nemen op een specifiek tijdstip.</p>
-        <a href="#">Bekijk dit project</a>
+        <img src="images/turkije.jpg" alt="">
+        <h3>Turkije</h3>
+        <p>Het altijd mooie Turkije met haar prachtige blauwe kleuren.</p>
+        <a href="#">Bekijk meer info</a>
     </article>
      <article>
-        <img src="images/projecten/isga.jpg" alt="">
-        <h3>FiNancy App</h3>
-        <p>FiNancy is een financiële guide voor internationale studenten in Amsterdam. In de app kan de student tips &amp; tricks lezen over alles wat met geld te maken heeft. Ook kan de student zijn eigen financiën bijhouden. Dit zorgt voor een zorgeloos verblijf in Amsterdam. </p>
-        <a href="#">Bekijk dit project</a>
+        <img src="images/griekenland.jpg" alt="">
+        <h3>Griekenland</h3>
+        <p>Het altijd mooie Griekenland met haar prachtige blauwe kleuren.</p>
+        <a href="#">Bekijk meer info</a>
     </article>
 </section>
-
-<section id="overmij">
-<h2>Over mij</h2>
-<p>Als student in het tweede jaar van de opleiding Communication &amp; Multimedia Design ben ik bezig met het leren van Frontend en Visual Development. Na een MBO opleiding Media Vormgeving te hebben afgerond wilde ik mij verder ontwikkelen op het online gebied. Het ontwerpen en ontwikkelen van apps en websites en het daarbij rekening houden met de user experience vind ik interessant. Hier wil ik mij verder in specialiseren.</p>
-</section>
-
-
-<section>
-    <h2>Experimenten</h2>
-    <p>Naast het maken van interfaces, ben ik bezig met digital art, logo's en ander werk in bijvoorbeeld Adobe Illustrator. </p>
-    
-    <article>
-        <img src="images/eigenwerk/injoba-logo.png" alt="">
-        <h3>Injoba Games</h3>
-        <p>Samen met een paar vrienden zijn we Injoba Games gestart en zijn we onze eigen game aan het ontwikkelen.</p>
-    </article>
-    <article>
-        <img src="images/eigenwerk/poison.jpg" alt="">
-        <h3>Poison fairies</h3>
-        <p>Tekst</p>
-    </article>
-    <article>
-        <img src="images/eigenwerk/beachatnight.jpg" alt="">
-        <h3>Beach at night</h3>
-        <p>Tekst</p>
-    </article>
-    <article>
-        <img src="images/eigenwerk/mushrooms.png" alt="">
-        <h3>Mushrooms</h3>
-        <p>Tekst</p>
-    </article>
-</section>
-
-
 
 </main>
 
 <footer>
 
- <form action="formulier">
-  <fieldset>
-    <legend>Contact</legend>
-    Naam<br>
-    <input type="text" name="firstname" value="Mickey"><br>
-       Email<br>
-    <input type="email" name="lastname" value=""><br><br>
-    <input type="submit" value="Versturen">
-  </fieldset>
-</form> 
-
 </footer>
 
+
 </body>
+
 </html>
 
 
