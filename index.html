@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <title>Planit</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
 </head>
 
 <body>
 
     <header>
         <nav>
-              <ul>
+            <ul>
                 <li><img id='logo' src="images/logo-09.svg" alt=""></li>
                 <li><img src="images/locatieicon.svg" alt=""><a href="index.html">Vakanties</a></li>
                 <li><img src="images/harticon.svg" alt=""><a href="match.html">Matches</a> </li>
@@ -47,6 +49,27 @@
                     <input type="range" name="points" min="0" max="900"> <br>
                 </div>
                 <div class="childfilter">
+
+                    <h4>Type vakantie</h4>
+                    <!-- <input type="checkbox" name="vehicle1" value="Avontuur"> Avontuur<br>
+                    <input type="checkbox" name="vehicle2" value="Wintersport"> Wintersport<br>
+                    <input type="checkbox" name="vehicle3" value="Zonvakantie"> Zonvakantie<br>
+                     <input type="checkbox" name="vehicle3" value="Camperen"> Camperen<br>
+                      <input type="checkbox" name="vehicle3" value="Stedentrip"> Stedentrip<br> -->
+                </div>
+
+                <div class="container">
+                    <ul class="ks-cboxtags">
+                        <li><input type="checkbox" id="checkboxOne" value="Stedentrip"><label for="checkboxOne">Stedentrip</label></li>
+                        <li><input type="checkbox" id="checkboxTwo" value="Wintersport"><label for="checkboxTwo">Wintersport</label></li>
+                        <li><input type="checkbox" id="checkboxThree" value="Zonvakantie"><label for="checkboxThree">Zonvakantie</label></li>
+                        <li><input type="checkbox" id="checkboxFour" value="Camperen"><label for="checkboxFour">Camperen</label></li>
+                        <li><input type="checkbox" id="checkboxFive" value="Autovakantie"><label for="checkboxFive">Autovakantie</label></li>
+                        <li><input type="checkbox" id="checkboxSix" value="Cultuur" checked><label for="checkboxSix">Cultuur</label></li>
+                    </ul>
+                </div>
+
+                <div class="childfilter">
                     <h4>Reisgenoten</h4>
                     <input type="text" placeholder="Met wie ga je op reis..."> <br>
                 </div>
@@ -66,7 +89,6 @@
 
 
             <article>
-
                 <img src="images/griekenland.jpg" alt="">
                 <h3>Hotel Vesias</h3>
                 <sub>Spanje | Tenerife, Playa De Las Americas</sub>
@@ -79,39 +101,48 @@
                 </ul>
                 <a href="#">Bekijk meer info</a>
                 <img src="images/hart-leeg.svg" alt="" class="hartlike">
-
             </article>
+            
             <article>
                 <img src="images/turkije.jpg" alt="">
-                <h3>Turkije</h3>
-                <table>
+  <h3>Titanic Resort </h3>
+                <sub>Turkije | Turkse Rivera, Side</sub>                <table>
                     <tr>
                         <th>Faciliteiten</th>
-                        <th></th>
                         <th></th>
                     </tr>
                     <tr>
                         <td>Zwembad</td>
                         <td>Sportzaal</td>
-                        <td>Entertainment</td>
                     </tr>
                     <tr>
                         <td>Sauna</td>
                         <td>Wellness</td>
-                        <td>Bad</td>
                     </tr>
                 </table>
                 <img src="images/hart-leeg.svg" alt="" class="hartlike">
-
             </article>
-            <article>
+                  
+           <article>
+                <img src="images/turkije.jpg" alt="">
+                <h3>Sunos Beach Resort </h3>
+                <sub>Turkije | Turkse Rivera, Side</sub>
 
-                <img src="images/griekenland.jpg" alt="">
-                <h3>Griekenland</h3>
-                <p>Het altijd mooie Griekenland met haar prachtige blauwe kleuren.</p>
-                <a href="#">Bekijk meer info</a>
+                <table>
+                            <tr>
+                        <th>Faciliteiten</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Zwembad</td>
+                        <td>Sportzaal</td>
+                    </tr>
+                    <tr>
+                        <td>Sauna</td>
+                        <td>Wellness</td>
+                    </tr>
+                </table>
                 <img src="images/hart-leeg.svg" alt="" class="hartlike">
-
             </article>
         </section>
 
