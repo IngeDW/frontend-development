@@ -34,8 +34,11 @@ h4 {
 
 sub {
     color: rgb(102, 36, 131);
+    color: 
     padding: 0;
     margin: -10px 0 0 0;
+        font-weight: 600;
+
 }
 
 p,
@@ -206,9 +209,11 @@ body {
 }
 
 form {
-    padding: 1em;
+    background-color: darkgoldenrod;
+    padding: 1em 2em;
+    margin: 1em;
     display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );}
+    grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );}
 
 .childfilter {
   grid-gap: 1em;
