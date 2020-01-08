@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Planit</title>
+    <title>Portfolio - Inge de Waard</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:400,400i,600,600i,700,700i,800,800i|Roboto+Mono:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
 <body>
 
     <header>
+
         <nav>
             <ul>
                 <li><img id='logo' src="images/logo-09.svg" alt=""></li>
@@ -21,139 +22,199 @@
                 <li><img src="images/fotoicon.svg" alt=""><a href="#">Fotodagboek</a></li>
             </ul>
         </nav>
-    </header>
+
+<form id="containerfilter" action="formulier">
+
+                <legend>Filter je zoekresultaten</legend>
 
 
-    <main>
-
-        <div id="banner">
-
-        </div>
-        <sibebar>
-            <h1>Filter je zoekresultaten</h1>
-            <form id="containerfilter" action="formulier">
                 <div class="childfilter">
                     <h4>Bestemming</h4>
                     <input type="text" placeholder="Waar wilt u heen..."> <br>
                 </div>
+
                 <div class="childfilter">
                     <h4>Aankomst</h4>
                     <input type="date"> <br>
                 </div>
+
                 <div class="childfilter">
                     <h4>Vertek</h4>
                     <input type="date"> <br>
                 </div>
-                <div class="childfilter">
-                    <h4>Budget</h4>
-                    <input type="range" name="points" min="0" max="900"> <br>
-                </div>
-                <div class="childfilter">
 
+
+
+
+                <div class="childfilter">
                     <h4>Type vakantie</h4>
-                    <!-- <input type="checkbox" name="vehicle1" value="Avontuur"> Avontuur<br>
-                    <input type="checkbox" name="vehicle2" value="Wintersport"> Wintersport<br>
-                    <input type="checkbox" name="vehicle3" value="Zonvakantie"> Zonvakantie<br>
-                     <input type="checkbox" name="vehicle3" value="Camperen"> Camperen<br>
-                      <input type="checkbox" name="vehicle3" value="Stedentrip"> Stedentrip<br> -->
-                </div>
-
-                <div class="container">
                     <ul class="ks-cboxtags">
                         <li><input type="checkbox" id="checkboxOne" value="Stedentrip"><label for="checkboxOne">Stedentrip</label></li>
                         <li><input type="checkbox" id="checkboxTwo" value="Wintersport"><label for="checkboxTwo">Wintersport</label></li>
                         <li><input type="checkbox" id="checkboxThree" value="Zonvakantie"><label for="checkboxThree">Zonvakantie</label></li>
                         <li><input type="checkbox" id="checkboxFour" value="Camperen"><label for="checkboxFour">Camperen</label></li>
                         <li><input type="checkbox" id="checkboxFive" value="Autovakantie"><label for="checkboxFive">Autovakantie</label></li>
-                        <li><input type="checkbox" id="checkboxSix" value="Cultuur" checked><label for="checkboxSix">Cultuur</label></li>
+                        <li><input type="checkbox" id="checkboxSix" value="Cultuur"><label for="checkboxSix">Cultuur</label></li>
                     </ul>
                 </div>
 
                 <div class="childfilter">
-                    <h4>Reisgenoten</h4>
-                    <input type="text" placeholder="Met wie ga je op reis..."> <br>
-                </div>
-                <div class="childfilter">
                     <h4></h4>
-                    <input type="submit" value="Uitnodiging verzenden">
+                    <input type="submit" value="Bekijk vakanties">
                 </div>
 
             </form>
 
 
-        </sibebar>
+    </header>
 
-        <!--https://www.w3schools.com/howto/howto_js_filter_lists.asp-->
+    <main>
 
         <section>
-
-
-            <article>
+            <h2>Resultaten</h2>
+            <h3>ddfdf</h3>
+                 <article>
+                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="">
+                <h4>Hotel La Buena, <br> Griekenland</h4>
                 <img src="images/griekenland.jpg" alt="">
-                <h3>Hotel Vesias</h3>
-                <sub>Spanje | Tenerife, Playa De Las Americas</sub>
-                <p></p>
-                <h4>Faciliteiten</h4>
-                <ul class="faciliteiten">
-                    <li class="faciliteiten">200m tot strand</li>
-                    <li class="faciliteiten">Buiten zwembad</li>
-                    <li class="faciliteiten">Wellness &amp;Sauna</li>
-                </ul>
-                <a href="#">Bekijk meer info</a>
-                <img src="images/hart-leeg.svg" alt="" class="hartlike">
-            </article>
-            
-            <article>
-                <img src="images/turkije.jpg" alt="">
-  <h3>Titanic Resort </h3>
-                <sub>Turkije | Turkse Rivera, Side</sub>                <table>
-                    <tr>
+                
+                <table >
+                     <tr>
                         <th>Faciliteiten</th>
-                        <th></th>
+                      
                     </tr>
                     <tr>
-                        <td>Zwembad</td>
-                        <td>Sportzaal</td>
-                    </tr>
-                    <tr>
-                        <td>Sauna</td>
                         <td>Wellness</td>
+                        <td>4 zwembaden</td>
+                    </tr>
+                    <tr>
+                        <td>Huisdieren toegestaan</td>
+                        <td>Entertainment</td>
+                    </tr>
+                    <tr>
+                        <td>Fitness</td>
+                        <td>Sauna</td>
                     </tr>
                 </table>
-                <img src="images/hart-leeg.svg" alt="" class="hartlike">
-            </article>
-                  
-           <article>
-                <img src="images/turkije.jpg" alt="">
-                <h3>Sunos Beach Resort </h3>
-                <sub>Turkije | Turkse Rivera, Side</sub>
+            <a class="bekijkmeer" href="#"> € 632 p.p.</a>
 
-                <table>
-                            <tr>
+            </article>
+                    <article>
+                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="">
+                <h4>Hotel Sentido Ama, <br> Spanje</h4>
+                <img src="images/spanje.jpg" alt="">
+                
+                <table >
+                     <tr>
                         <th>Faciliteiten</th>
-                        <th></th>
+                      
                     </tr>
                     <tr>
-                        <td>Zwembad</td>
-                        <td>Sportzaal</td>
+                        <td>Wellness</td>
+                        <td>4 zwembaden</td>
+                    </tr>
+                    <tr>
+                        <td>Huisdieren toegestaan</td>
+                        <td>Entertainment</td>
+                    </tr>
+                    <tr>
+                        <td>Fitness</td>
+                        <td>Sauna</td>
+                    </tr>
+                </table>
+            <a class="bekijkmeer" href="#"> € 756 p.p.</a>
+
+            </article>
+                   <article>
+                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="">
+                <h4>Hotel Waikiki, <br> Gran Canaria</h4>
+                <img src="images/turkije.jpg" alt="">
+                
+                <table >
+                     <tr>
+                        <th>Faciliteiten</th>
+                      
+                    </tr>
+                    <tr>
+                        <td>Wellness</td>
+                        <td>4 zwembaden</td>
+                    </tr>
+                    <tr>
+                        <td>Huisdieren toegestaan</td>
+                        <td>Entertainment</td>
+                    </tr>
+                    <tr>
+                        <td>Fitness</td>
+                        <td>Sauna</td>
+                    </tr>
+                </table>
+            <a class="bekijkmeer" href="#"> € 784 p.p.</a>
+
+            </article>
+                  <article>
+                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="">
+                <h4>Hotel Hacienda, <br> Ibiza</h4>
+                <img src="images/spanje2.jpg" alt="">
+                
+                <table >
+                     <tr>
+                        <th>Faciliteiten</th>
+                      
+                    </tr>
+                    <tr>
+                        <td>Wellness</td>
+                        <td>4 zwembaden</td>
+                    </tr>
+                    <tr>
+                        <td>Huisdieren toegestaan</td>
+                        <td>Entertainment</td>
                     </tr>
                     <tr>
                         <td>Sauna</td>
-                        <td>Wellness</td>
                     </tr>
                 </table>
-                <img src="images/hart-leeg.svg" alt="" class="hartlike">
+            <a class="bekijkmeer" href="#"> € 699 p.p.</a>
+
+            </article>
+            <article>
+                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="">
+                <h4>Ama Islantilla Resort, <br> Izantila</h4>
+                <img src="images/ibiza2.jpg" alt="">
+                
+                <table >
+                     <tr>
+                        <th>Faciliteiten</th>
+                      
+                    </tr>
+                    <tr>
+                        <td>Wellness</td>
+                        <td>2 zwembaden</td>
+                    </tr>
+                    <tr>
+                        <td>Huisdieren toegestaan</td>
+                        <td>Entertainment</td>
+                    </tr>
+                    <tr>
+                        <td>Fitness</td>
+                        <td>Sauna</td>
+                    </tr>
+                </table>
+            <a class="bekijkmeer" href="#"> € 802 p.p.</a>
+
             </article>
         </section>
+
+
+
+
+
+
 
     </main>
 
     <footer>
 
-
-
     </footer>
-
 
 </body>
 

@@ -10,15 +10,13 @@ document.documentElement.classList.add("js");
 
 
 
-
-var hart = document.querySelector(".hartlike");
+var hart = document.querySelector(".leeg-hartje");
 
 function changeHart() {
-    hart.src = "./images/hart-vol.svg";
+    hart.src = "../images/hart-vol.svg";
     console.log("er is geklikt");
 }
 
 hart.addEventListener('click', changeHart);
-
 
 
