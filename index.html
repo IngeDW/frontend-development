@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - Inge de Waard</title>
+    <title>Frontend - Inge de Waard</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:400,400i,600,600i,700,700i,800,800i|Roboto+Mono:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Asap:600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,176 +16,158 @@
 
         <nav>
             <ul>
-                <li><img id='logo' src="images/logo-09.svg" alt=""></li>
+                <li><a href="index.html"><img id='logo' src="images/logo-09.svg" alt=""></a></li>
                 <li><img src="images/locatieicon.svg" alt=""><a href="index.html">Vakanties</a></li>
-                <li><img src="images/harticon.svg" alt=""><a href="match.html">Matches</a> </li>
+                <li><img src="images/harticon.svg" alt=""><a href="detailpagina.html">Matches</a> </li>
                 <li><img src="images/agendaicon.svg" alt=""><a href="#">Agenda</a></li>
                 <li><img src="images/fotoicon.svg" alt=""><a href="#">Fotodagboek</a></li>
             </ul>
         </nav>
 
-<form id="containerfilter" action="formulier">
+        <form id="containerfilter" href="#agenda">
 
-                <legend>Filter je zoekresultaten</legend>
+            <legend>Filter je zoekresultaten</legend>
 
+            <fieldset>
+                <label class="childfilter" from='bestemming'>Bestemming</label>
+                <input id='bestemming' type="text" placeholder="Land, regio, plaats etc." required> <br>
+                <label class="childfilter" from='aankomst'>Aankomst datum</label>
+                <input id='aankomst' type="date" required> <br>
+                <label class="childfilter" from='vertrek'>Vertrek datum</label>
+                <input id='vertrek' type="date" required> <br>
+            </fieldset>
 
-                <div class="childfilter">
-                    <h4>Bestemming</h4>
-                    <input type="text" placeholder="Waar wilt u heen..."> <br>
-                </div>
+            <fieldset>
+                <label class="childfilter" from='vertrek'>Type vakantie</label>
+                <!--BRON: https://codepen.io/quinlo/pen/ReMRXz?editors=1100-->
+                <ul class="ks-cboxtags">
+                    <li><input type="checkbox" id="checkboxOne" value="Stedentrip"><label for="checkboxOne">Stedentrip</label></li>
+                    <li><input type="checkbox" id="checkboxTwo" value="Wintersport"><label for="checkboxTwo">Wintersport</label></li>
+                    <li><input type="checkbox" id="checkboxSix" value="Cultuur"><label for="checkboxSix">Cultuur</label></li>
+                    <li><input type="checkbox" id="checkboxThree" value="Zonvakantie"><label for="checkboxThree">Zonvakantie</label></li>
+                    <li><input type="checkbox" id="checkboxFour" value="Camperen"><label for="checkboxFour">Camperen</label></li>
+                    <li><input type="checkbox" id="checkboxFive" value="Autovakantie"><label for="checkboxFive">Autovakantie</label></li>
+                </ul>
 
-                <div class="childfilter">
-                    <h4>Aankomst</h4>
-                    <input type="date"> <br>
-                </div>
+            </fieldset>
 
-                <div class="childfilter">
-                    <h4>Vertek</h4>
-                    <input type="date"> <br>
-                </div>
+            <input   type="submit" value="Bekijk vakanties" href="#linktohere"> 
 
-
-
-
-                <div class="childfilter">
-                    <h4>Type vakantie</h4>
-                    <ul class="ks-cboxtags">
-                        <li><input type="checkbox" id="checkboxOne" value="Stedentrip"><label for="checkboxOne">Stedentrip</label></li>
-                        <li><input type="checkbox" id="checkboxTwo" value="Wintersport"><label for="checkboxTwo">Wintersport</label></li>
-                        <li><input type="checkbox" id="checkboxThree" value="Zonvakantie"><label for="checkboxThree">Zonvakantie</label></li>
-                        <li><input type="checkbox" id="checkboxFour" value="Camperen"><label for="checkboxFour">Camperen</label></li>
-                        <li><input type="checkbox" id="checkboxFive" value="Autovakantie"><label for="checkboxFive">Autovakantie</label></li>
-                        <li><input type="checkbox" id="checkboxSix" value="Cultuur"><label for="checkboxSix">Cultuur</label></li>
-                    </ul>
-                </div>
-
-                <div class="childfilter">
-                    <h4></h4>
-                    <input type="submit" value="Bekijk vakanties">
-                </div>
-
-            </form>
-
+        </form>
 
     </header>
 
-    <main>
+   
+   
+    <main >
 
-        <section>
+        <section id="linktohere">
             <h2>Resultaten</h2>
-            <h3>ddfdf</h3>
-                 <article>
-                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="">
-                <h4>Hotel La Buena, <br> Griekenland</h4>
-                <img src="images/griekenland.jpg" alt="">
-                
-                <table >
-                     <tr>
-                        <th>Faciliteiten</th>
-                      
-                    </tr>
-                    <tr>
-                        <td>Wellness</td>
-                        <td>4 zwembaden</td>
-                    </tr>
-                    <tr>
-                        <td>Huisdieren toegestaan</td>
-                        <td>Entertainment</td>
-                    </tr>
-                    <tr>
-                        <td>Fitness</td>
-                        <td>Sauna</td>
-                    </tr>
-                </table>
-            <a class="bekijkmeer" href="#"> € 632 p.p.</a>
-
-            </article>
-                    <article>
-                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="">
-                <h4>Hotel Sentido Ama, <br> Spanje</h4>
-                <img src="images/spanje.jpg" alt="">
-                
-                <table >
-                     <tr>
-                        <th>Faciliteiten</th>
-                      
-                    </tr>
-                    <tr>
-                        <td>Wellness</td>
-                        <td>4 zwembaden</td>
-                    </tr>
-                    <tr>
-                        <td>Huisdieren toegestaan</td>
-                        <td>Entertainment</td>
-                    </tr>
-                    <tr>
-                        <td>Fitness</td>
-                        <td>Sauna</td>
-                    </tr>
-                </table>
-            <a class="bekijkmeer" href="#"> € 756 p.p.</a>
-
-            </article>
-                   <article>
-                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="">
-                <h4>Hotel Waikiki, <br> Gran Canaria</h4>
-                <img src="images/turkije.jpg" alt="">
-                
-                <table >
-                     <tr>
-                        <th>Faciliteiten</th>
-                      
-                    </tr>
-                    <tr>
-                        <td>Wellness</td>
-                        <td>4 zwembaden</td>
-                    </tr>
-                    <tr>
-                        <td>Huisdieren toegestaan</td>
-                        <td>Entertainment</td>
-                    </tr>
-                    <tr>
-                        <td>Fitness</td>
-                        <td>Sauna</td>
-                    </tr>
-                </table>
-            <a class="bekijkmeer" href="#"> € 784 p.p.</a>
-
-            </article>
-                  <article>
-                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="">
-                <h4>Hotel Hacienda, <br> Ibiza</h4>
-                <img src="images/spanje2.jpg" alt="">
-                
-                <table >
-                     <tr>
-                        <th>Faciliteiten</th>
-                      
-                    </tr>
-                    <tr>
-                        <td>Wellness</td>
-                        <td>4 zwembaden</td>
-                    </tr>
-                    <tr>
-                        <td>Huisdieren toegestaan</td>
-                        <td>Entertainment</td>
-                    </tr>
-                    <tr>
-                        <td>Sauna</td>
-                    </tr>
-                </table>
-            <a class="bekijkmeer" href="#"> € 699 p.p.</a>
-
-            </article>
+            
             <article>
-                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="">
-                <h4>Ama Islantilla Resort, <br> Izantila</h4>
-                <img src="images/ibiza2.jpg" alt="">
-                
-                <table >
-                     <tr>
+                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="Hartje om te liken">
+                <h4>Hotel La Buena, <br> Griekenland</h4>
+                <img src="images/griekenland.jpg" alt="Afbeelding van Hotel La Buena in Griekenland">
+                <table>
+                    <tr>
                         <th>Faciliteiten</th>
-                      
+                    </tr>
+                    <tr>
+                        <td>Wellness</td>
+                        <td>4 zwembaden</td>
+                    </tr>
+                    <tr>
+                        <td>Huisdieren toegestaan</td>
+                        <td>Entertainment</td>
+                    </tr>
+                    <tr>
+                        <td>Fitness</td>
+                        <td>Sauna</td>
+                    </tr>
+                </table>
+                <a class="bekijkmeer" href="detailpagina.html"> &euro; 632 p.p.</a>
+            </article>
+            
+            <article>
+                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="Hartje om te liken">
+                <h4>Hotel Sentido Ama, <br> Spanje</h4>
+                <img src="images/spanje.jpg" alt="Afbeelding van Hotel Sentido Ama in Spanje">
+
+                <table>
+                    <tr>
+                        <th>Faciliteiten</th>
+
+                    </tr>
+                    <tr>
+                        <td>Wellness</td>
+                        <td>4 zwembaden</td>
+                    </tr>
+                    <tr>
+                        <td>Huisdieren toegestaan</td>
+                        <td>Entertainment</td>
+                    </tr>
+                    <tr>
+                        <td>Fitness</td>
+                        <td>Sauna</td>
+                    </tr>
+                </table>
+                <a class="bekijkmeer" href="detailpagina.html"> &euro; 756 p.p.</a>
+            </article>
+            
+            <article>
+                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="Hartje om te liken">
+                <h4>Hotel Waikiki, <br> Gran Canaria</h4>
+                <img src="images/turkije.jpg" alt="Afbeelding van Hotel Waikiki in Gran Canaria">
+                <table>
+                    <tr>
+                        <th>Faciliteiten</th>
+                    </tr>
+                    <tr>
+                        <td>Wellness</td>
+                        <td>4 zwembaden</td>
+                    </tr>
+                    <tr>
+                        <td>Huisdieren toegestaan</td>
+                        <td>Entertainment</td>
+                    </tr>
+                    <tr>
+                        <td>Fitness</td>
+                        <td>Sauna</td>
+                    </tr>
+                </table>
+                <a class="bekijkmeer" href="detailpagina.html"> € 784 p.p.</a>
+            </article>
+            
+            <article>
+                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="Hartje om te liken">
+                <h4>Hotel Hacienda, <br> Ibiza</h4>
+                <img src="images/spanje2.jpg" alt="Afbeelding van Hotel Hacienda in Ibiza">
+                <table>
+                    <tr>
+                        <th>Faciliteiten</th>
+                    </tr>
+                    <tr>
+                        <td>Wellness</td>
+                        <td>4 zwembaden</td>
+                    </tr>
+                    <tr>
+                        <td>Huisdieren toegestaan</td>
+                        <td>Entertainment</td>
+                    </tr>
+                    <tr>
+                        <td>Sauna</td>
+                    </tr>
+                </table>
+                <a class="bekijkmeer" href="detailpagina.html"> &euro; 699 p.p.</a>
+            </article>
+            
+            <article>
+                <img class="leeg-hartje" src="images/hart-leeg.svg" alt="Hartje om te liken">
+                <h4>Ama Islantilla Resort, <br> Izantila</h4>
+                <img src="images/alexander-2.jpg" alt="Afbeelding van het Ama Islantilla Resort in Izantila">
+                <table>
+                    <tr>
+                        <th>Faciliteiten</th>
                     </tr>
                     <tr>
                         <td>Wellness</td>
@@ -199,26 +182,22 @@
                         <td>Sauna</td>
                     </tr>
                 </table>
-            <a class="bekijkmeer" href="#"> € 802 p.p.</a>
-
+                <a class="bekijkmeer" href="detailpagina.html"> &euro; 802 p.p.</a>
             </article>
+            
         </section>
-
-
-
-
-
-
 
     </main>
 
+
+
     <footer>
+        <img id='octocat' src="images/octocat-hover.png" alt="Plaatje van Octocat">
 
     </footer>
 
 </body>
 
-</html>
-
-
 <script src="js/javascript.js"></script>
+
+</html>

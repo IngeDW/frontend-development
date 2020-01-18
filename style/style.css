@@ -1,20 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Roboto+Slab:400,700&display=swap');
 
 
+
+
+
+/*****************************
+           FONTS
+******************************/
+
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Playfair+Display:400,900&display=swap');
 
-*,
-:before,
-:after {
+
+
+
+
+/*****************************
+           ALGEMEEN
+******************************/
+
+*,:before,:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 
 * {
     font-family: 'Source Sans Pro', sans-serif;
@@ -23,51 +35,67 @@
     line-height: 1.4em;
 }
 
-
-body { 
+body {
     overflow-x: hidden;
 }
 
-#logo {
-    width: 100px;
-}
-
-
 h1 {
-    font-weight: 600;
     padding: 0em 0.6em;
     text-align: center;
-    z-index: 10;
-    margin-top: 1em;
+    margin-top: 7.5em;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 2.2em;
+    font-size: 2em;
     color: #1e1e3a;
-
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 8;
+    text-align: center; 
+    width: 100vw;
 }
 
+h1 span {
+    background-color: azure;
+    padding: 10px;
+}
+
+legend {
+    padding: 0.5em 0em 0em;
+    margin: 0;
+    text-align: left;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.5em;
+}
 
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Asap', sans-serif;
     font-size: 1.8em;
-    font-weight: 200;
-    font-weight: 700;
+    font-weight: 100;
     line-height: 1em;
-    margin-bottom: 1em;
+    margin: 2em 1em 0em;
     text-align: center;
-    color: #1e1e3a;
+    color: rgba(214, 11, 82, 1);
 }
 
 
 h3 {
-    font-weight: 600;
     padding: 0em 0.6em;
     text-align: center;
-    text-transform: uppercase;
-    color: #8B4513;
-    margin-top: -0.5em;
-    margin-bottom: 3em;
-
+    margin-top: 5em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: antiquewhite;
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 8;
+    text-align: center; 
+    width: 100vw;
+      text-shadow: 2px 2px 4px #000000;
 }
 
 h4 {
@@ -87,16 +115,7 @@ p {
     font-family: 'Open Sans', sans-serif;
     text-align: left;
     max-width: 70rem;
-    
-}
 
-
-.inleiding {
-    width: 60vw;
-    margin: auto;
-    margin-top: -1em;
-    margin-bottom: 3em;
-    text-align: center;
 }
 
 h5 {
@@ -110,9 +129,415 @@ h6 {
     font-weight: 400;
 }
 
+table {
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    text-align: left;
+    border-spacing: 0;
+}
 
-h2 p {
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+th {
+    padding-bottom: 0.5em;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+/*****************************
+  vliegende blokken
+******************************/
+
+#blok1 {
+    width: 50px;
+    height: 50px;
+    animation: animate 7s linear infinite alternate;
+    position: fixed;
+    top: -4em;
+    left: 20vw;
+}
+
+@keyframes animate {
+    0% {
+        border: 0.6em solid azure;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border: 0.4em solid cadetblue;
+        transform: rotate(90deg);
+        left: 30vw;
+    }
+
+    100% {
+        border: 0.2em solid purple;
+        color: white;
+        top: 40vh;
+        transform: rotate(180deg);
+    }
+}
+
+
+#blok2 {
+    width: 50px;
+    height: 50px;
+    animation: animate2 7s linear infinite alternate;
+    position: fixed;
+    bottom: -5em;
+    right: 20vw;
+    border-radius: 50%;
+}
+
+@keyframes animate2 {
+    0% {
+        border: 0.6em solid yellow;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border: 0.4em solid pink;
+        transform: rotate(90deg);
+        right: 30vw;
+    }
+
+    100% {
+        border: 0.2em solid cadetblue;
+        color: white;
+        bottom: 40vh;
+        transform: rotate(180deg);
+    }
+}
+
+
+
+/*****************************
+           HEADER
+******************************/
+
+header {
+    background-image: url(../images/banner2.jpg);
+    min-height: 100vh;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.detailpagina-img {
+    background-image: url(../images/alexander-videnov-2-cvrZDeKnw-unsplash.jpg);
+    background-position: center top;
+}
+
+#logo {
+    width: 100px;
+}
+
+nav {
+    background: rgb(102, 36, 131);
+    background: linear-gradient(38deg, rgba(102, 36, 131, 1) 0%, rgba(214, 11, 82, 1) 100%);
+    padding: 1em 1.5em;
+    position: fixed;
+    top: 0;
+    min-width: 100vw;
+    z-index: 10;
+}
+
+li {
+    color: white;
+    font-size: 0.9em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav img {
+    width: 120px;
+}
+
+li img {
+    width: 2.5em;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+ul li {
+    margin-left: 2em;
+}
+
+nav li:hover {
+    font-weight: 400;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    margin-left: 0;
+    text-transform: uppercase;
+}
+
+@media (max-width: 620px) {
+
+    header {
+        max-height: 6vh;
+    }
+    nav {
+        max-height: 10vh;
+    }
+    
+    nav li {
+        padding: 0 0 1em 0;
+        margin: 0 0 1em 0;
+    }
+
+    nav a {
+        display: none;
+    }
+    
+    nav a:first-child {
+        display: inline;
+    }
+
+    li:first-child {
+        border-bottom: 0;
+    }
+}
+
+
+
+
+
+/*****************************
+           FORMULIER
+******************************/
+
+form {
+    max-width: 90vw;
+    background-color: rgba(102, 36, 131, 0.9);
+    padding: 1em 2em 1em;
+    margin: auto;
+    margin-left: 5vw;
+    margin-top: 13vh;
+    position: absolute;
+}
+
+@media (min-width: 620px) {
+    form {
+        max-width: 475px;
+        margin-top: 8em;
+        margin-left: 9em;
+    }
+}
+
+input:required {
+    border: 2px solid #1fe01f;
+}
+
+fieldset {
+    border: none;
+    padding-top: 1em;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 0.5em 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    border-radius: 25px;
+    border: none;
+    margin: 0.2em 0em;
+    border: 5px solid yellow;
+}
+
+input:valid {
+    border: solid 5px yellowgreen;
+}
+
+input:invalid {
+    border: 5px solid white;
+}
+
+input:focus:active {
+    border: 5px solid yellow;
+}
+
+input[type=date]:before {
+    color: #adadad;
+}
+
+input[type=date]:valid {
+    color: #000;
+    border: solid 5px yellowgreen;
+}
+
+@media (min-width: 620px) {
+    input {
+        width: 100%;
+    }
+}
+
+input[type=submit] {
+    background: linear-gradient(38deg, rgba(102, 36, 131, 1) 0%, rgba(214, 11, 82, 1) 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 1.5em;
+    padding: 0.75em;
+}
+
+.container {
+    max-width: 640px;
+    padding: 0;
+}
+
+
+/*BRON: https://codepen.io/quinlo/pen/ReMRXz?editors=1100*/
+
+ul.ks-cboxtags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+ul.ks-cboxtags li {
+    margin: 0;
+    padding-right: 0.2em;
+    display: inline;
+}
+
+ul.ks-cboxtags li label {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    font-size: 1.1em;
+    border-radius: 25px;
+    white-space: wrap;
+    margin: 5px 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all .2s;
+    cursor: pointer;
+    padding-right: 1em;
+
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 0.5em 1em;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    background-color: rgba(214, 11, 82, 1);
+    color: #fff;
+    border: none;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+    display: absolute;
+    position: absolute;
+    opacity: 0;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+    border: 2px solid yellow;
+}
+
+
+
+
+
+/*****************************
+           BODY
+******************************/
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+
+main {
+    padding: 0.5em;
+}
+
+@media (min-width: 620px) {
+    main {
+        padding: 3em;
+    }
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+section, h2, p {
+    grid-column: 1 / -1;
+}
+
+article {
+    background-color: white;
+    padding: 0em 0em;
+    margin: 1em;
     text-align: center;
+    border-radius: 0px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    position: relative;
+}
+
+article:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    /*transform: translate3d(20px, -20px, 20px);*/
+}
+
+@media (max-width: 620px) {
+    article:hover {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+article img {
+    width: 100%;
+    border-radius: 0px;
 }
 
 .bekijkmeer {
@@ -134,320 +559,8 @@ h2 p {
 .bekijkmeer:hover {
     font-weight: 600;
     background-color: #1fe01f;
-}
-
-
-table {
-    width: 100%;
-    margin: 0;
-    padding: 1em;
-    text-align: left;
-    border-spacing: 0;}
-
-td {
-      border-bottom: 1px solid #ddd;
-    padding: 5px;
-}
-
-th {
-  padding-bottom: 0.5em;  
-}
-
-tr:nth-child(even) {background-color: #f2f2f2;} 
-
-/*****************************
-           HEADER
-******************************/
-
-header {
-    background-image: url(../images/banner2.jpg);
-    min-height: 100vh;
-    background-position: center bottom;
-    background-size: 100vw;
-    background-repeat: no-repeat;
-}
-
-nav {
-    background: rgb(102, 36, 131);
-    background: linear-gradient(38deg, rgba(102, 36, 131, 1) 0%, rgba(214, 11, 82, 1) 100%);
-    padding: 1em 1.5em;
-    position: fixed;
-    top: 0;
-    min-width: 100vw;
-    z-index: 10;
-    padding: 1em;
-
-}
-
-li {
-    color: white;
-    font-size: 0.9em;
-    text-decoration: none;
-}
-
-nav a {
-    color: white;
-}
-
-nav img {
-    width: 120px;
-}
-
-li img {
-    width: 2.5em;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-
-
-ul li {
-    margin-left: 2em;
-}
-
-nav li:hover {
-    border-bottom: 2px solid white;
-}
-
-
-nav li:first-child {
-    margin-right: auto;
-    margin-left: 0;
-    text-transform: uppercase;
-}
-
-
-@media (max-width: 620px) {
-
-    header {
-        max-height: 6vh;
-
-    }
-
-    nav li {
-        padding: 0 0 1em 0;
-        margin: 0 0 1em 0;
-
-        /*border-bottom: 1px solid orange;*/
-    }
-
-    nav a {
-        display: none;
-    }
-
-    li:first-child {
-        border-bottom: 0;
-    }
-
-}
-
-
-/*****************************
-           Checkboxes
-https://codepen.io/quinlo/pen/ReMRXz?editors=1100
-******************************/
-form {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
-}
-
-
-input:required {
-    border: 2px solid #1fe01f;
-}
-
-fieldset {
-    border: none;
-    padding: 0;
-}
-
-input {
-    width: 100%;
-    padding: 0.5em 1em;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    border-radius: 25px;
-    border: none;
-    margin: 3px 0px;
-    
-}
-
-input[type=date]:before {
-    color: #adadad;
-
-}
-
-
-input:invalid {
-  border: 2px solid red;
-}
-
-input[type=date]:valid {
-    color: #000;
-    border: solid 2px #1fe01f;
-}
-
-@media (min-width: 620px) {
-    input {
-        width: 100%;
-    }
-
-}
-
-input[type=submit] {
-    background: linear-gradient(38deg, rgba(102, 36, 131, 1) 0%, rgba(214, 11, 82, 1) 100%);
-    color: white;
-    border: none;
-    border-radius: 25px;
     cursor: pointer;
 }
-
-
-.container {
-    max-width: 640px;
-    padding: 0;
-
-
-}
-
-ul.ks-cboxtags {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-}
-
-ul.ks-cboxtags li {
-    margin: 0;
-    padding: 0;
-
-}
-
-ul.ks-cboxtags li label {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, .9);
-    color: #adadad;
-    border-radius: 25px;
-    white-space: wrap;
-    margin: 3px 0px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    transition: all .2s;
-    cursor: pointer;
-    padding-right: 1em;
-
-}
-
-
-
-ul.ks-cboxtags li label::before {
-    display: inline-block;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 12px;
-    padding: 1em 1em;
-    content: "\f067";
-    transition: transform .3s ease-in-out;
-}
-
-ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
-    content: "\f00c";
-    transform: rotate(-360deg);
-    transition: transform .3s ease-in-out;
-}
-
-ul.ks-cboxtags li input[type="checkbox"]:checked + label {
-    background-color: rgb(102, 36, 131);
-    color: #fff;
-    border: none;
-    transition: all .2s;
-}
-
-ul.ks-cboxtags li input[type="checkbox"] {
-    display: absolute;
-}
-
-ul.ks-cboxtags li input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-}
-
-ul.ks-cboxtags li input[type="checkbox"]:focus + label {
-    border: 2px solid #e9a1ff;
-}
-
-/*****************************
-           BODY
-******************************/
-
-
-
-body {
-    font-family: sans-serif;
-    margin: 0;
-    width: 100vw;
-    background-color: #f1f1f1;
-}
-
-main {
-    padding: 0.5em;
-}
-
-@media (min-width: 620px) {
-main {
-    padding: 3em;
-}}
-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
-
-}
-
-section h3,
-h2,
-p {
-    grid-column: 1 / -1;
-}
-
-
-
-article {
-    background-color: white;
-    padding: 0em 0em;
-    margin: 1em;
-    text-align: center;
-    border-radius: 0px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-        position: relative;
-
-}
-
-article:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-article img {
-    width: 100%;
-    border-radius: 0px ;
-
-}
-
-
-
 
 .leeg-hartje {
     position: absolute;
@@ -459,23 +572,93 @@ article img {
 }
 
 
+
+
+
 /*****************************
            FOOTER
 ******************************/
 
-
-
 footer {
-    background-image: url(../images/footer-img-octocat.png);
-    min-height: 10em;
-    background-position: center top;
+    background-image: url(../images/footer-img-octocat-Hersteld.png);
+    min-height: 2em;
+    background-position: center center;
     background-size: 100vw;
-    background-size: 100%;
-    height: 22vw;
     background-repeat: no-repeat;
-    margin: 0;
+    margin-top: 5em;
     padding: 0;
-    transition: all 350ms ease-in .1s;
-    transition: transform 0.3s ease;
-    transform: translateY(0);
 }
+
+#octocat {
+    width: 20vw;
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    position: relative;
+    bottom: 300px;
+    transition: transform 1s ease;
+    transform: translateY(250px);
+}
+
+#octocat:hover {
+    transform: translateY(200px) scale(0.1) translateX(75px) rotate(360deg);
+}
+
+@media (min-width: 620px) {
+    #octocat {
+        width: 15vw;
+    }
+}
+
+
+
+
+
+/*****************************
+          DARKMODE
+******************************/
+
+/*BRON: https://css-tricks.com/dark-modes-with-css*/
+
+
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: lightgrey;
+    }
+
+    article {
+        background-color: #3a3a3a;
+    }
+
+    .leeg-hartje {
+        background-color: #3a3a3a;
+    }
+
+    tr:nth-child(even) {
+        background-color: #505050;
+    }
+
+    footer {
+        background-image: url(../images/footer-img-darkmode.png);
+    }
+}
+
+
+
+
+
+/*****************************
+    REDUCE MOTION ANIMATIONS
+******************************/
+    
+@media (prefers-reduced-motion: reduce) {
+    form {
+        animation: none;
+    }
+}
+
+
+
+
